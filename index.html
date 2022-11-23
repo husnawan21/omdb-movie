@@ -7,17 +7,20 @@
 
 		<title>OMDB Movie Library</title>
 		<link rel="icon" type="image/x-icon" href="favicon.png" />
-		<link href="/build.css" rel="stylesheet" />
+		<link
+			href="https://github.com/husnawan21/omdb-movie/blob/master/build.css"
+			rel="stylesheet"
+		/>
 	</head>
 	<body data-theme="halloween" class="selection:bg-primary">
 		<div class="min-h-screen bg-base-100">
 			<!-- navbar -->
 			<div class="navbar bg-base-100">
 				<div class="flex-1">
-					<a href="/" class="btn btn-ghost normal-case text-xl">OMDB Movie</a>
+					<a href="/" class="text-xl normal-case btn btn-ghost">OMDB Movie</a>
 				</div>
 				<div class="flex-none">
-					<ul class="menu menu-horizontal p-0">
+					<ul class="p-0 menu menu-horizontal">
 						<li tabindex="0">
 							<a>
 								Parent
@@ -33,7 +36,7 @@
 									/>
 								</svg>
 							</a>
-							<ul class="p-2 bg-base-100 z-20 shadow-md rounded-b-md">
+							<ul class="z-20 p-2 shadow-md bg-base-100 rounded-b-md">
 								<li><a>Submenu 1</a></li>
 								<li><a>Submenu 2</a></li>
 							</ul>
@@ -43,14 +46,14 @@
 				</div>
 			</div>
 
-			<div class="mx-auto max-w-3xl px-5">
+			<div class="max-w-3xl px-5 mx-auto">
 				<!-- search -->
-				<div class="form-control my-12">
+				<div class="my-12 form-control">
 					<div class="input-group">
 						<input
 							type="text"
 							placeholder="Search movie…"
-							class="input input-bordered focus:ring-1 focus:ring-offset-1 focus:ring-offset-transparent focus:ring-primary w-full"
+							class="w-full input input-bordered focus:ring-1 focus:ring-offset-1 focus:ring-offset-transparent focus:ring-primary"
 							id="search-input"
 						/>
 						<button
@@ -60,7 +63,7 @@
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								class="h-6 w-6"
+								class="w-6 h-6"
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke="currentColor"
@@ -77,7 +80,7 @@
 				</div>
 
 				<!-- hero -->
-				<div class="hero-content text-center">
+				<div class="text-center hero-content">
 					<div class="max-w-md">
 						<h1 class="text-5xl font-bold">Hello there</h1>
 						<p class="py-6">
@@ -91,20 +94,20 @@
 				<div class="mx-auto" id="result-message"></div>
 				<!-- movie list -->
 				<div
-					class="grid grid-rows-1 sm:gap-8 sm:grid-cols-2 md:grid-cols-3 grid-flow-row gap-6 sm:gap-y-12 my-12"
+					class="grid grid-flow-row grid-rows-1 gap-6 my-12 sm:gap-8 sm:grid-cols-2 md:grid-cols-3 sm:gap-y-12"
 					id="movie-list"
 				></div>
 				<div class="mx-auto" id="error-message"></div>
 			</div>
 		</div>
-		<footer class="mx-auto text-center py-8">
+		<footer class="py-8 mx-auto text-center">
 			@2022 <a href="" class="text-primary hover:italic">Dwi Husnawan</a>
 		</footer>
 
 		<!-- modal detail -->
 		<input type="checkbox" id="my-modal-5" class="modal-toggle" />
 		<div class="modal">
-			<div class="modal-box w-11/12 max-w-5xl modal-body bg-base-200">
+			<div class="w-11/12 max-w-5xl modal-box modal-body bg-base-200">
 				<div class="modal-action">
 					<!-- <label for="my-modal-5" class="btn">Yay!</label> -->
 				</div>
