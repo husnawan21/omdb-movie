@@ -1,0 +1,27 @@
+<div>
+	<div
+		class="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-5 leading-relaxed"
+	>
+		<img src="${movie.Poster}" class="w-full" alt="${movie.Title}" />
+		<div>
+			<h3 class="font-bold text-xl py-3">${movie.Title}</h3>
+			<ul class="border border-base-100 p-3 rounded-lg">
+				<li>Year: ${movie.Year}</li>
+				<li>Rated: ${movie.Rated}</li>
+				<li>Released: ${movie.Released}</li>
+				<li>Runtime: ${movie.Runtime}</li>
+				<li>Genre: ${movie.Genre}</li>
+				<li>Director: ${movie.Director}</li>
+				<li>Writer: ${movie.Writer}</li>
+				<li>Actors: ${movie.Actors}</li>
+				<li>Plot: ${movie.Plot}</li>
+				<li>Language: ${movie.Language}</li>
+			</ul>
+		</div>
+		<div class="modal-action relative">
+			<label for="my-modal-5" class="btn absolute bottom-2 right-2 btn-circle"
+				>✕</label
+			>
+		</div>
+	</div>
+</div>
