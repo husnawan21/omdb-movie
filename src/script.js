@@ -1,7 +1,7 @@
 function searchMovie() {
 	$("#movie-list").html("");
 	$.ajax({
-		url: "http://www.omdbapi.com/",
+		url: "https://www.omdbapi.com/",
 		type: "get",
 		dataType: "json",
 		data: {
@@ -14,7 +14,7 @@ function searchMovie() {
 				$.each(movies, function (i, data) {
 					$("#movie-list").append(`
 						<div class="card card-compact w-full bg-base-100 shadow-xl shadow-primary/10">
-							<figure class="relative"><img src="${data.Poster}" alt="${data.Title}" class="object-cover" /><a class="btn btn-sm absolute bottom-2 right-2">${data.Year}</a></figure>
+							<figure class="relative"><img src="${data.Poster}" alt="${data.Title}" class="object-cover" /><a class="btn btn-md absolute bottom-2 right-2">${data.Year}</a></figure>
 							<div class="card-body">
 								<h2 class="card-title">${data.Title}</h2>
 								<div class="card-actions justify-end">
@@ -55,7 +55,7 @@ $("#search-input").on("keyup", function (e) {
 
 $("#movie-list").on("click", ".see-detail", function () {
 	$.ajax({
-		url: "http://www.omdbapi.com/",
+		url: "https://www.omdbapi.com/",
 		type: "get",
 		dataType: "json",
 		data: {
